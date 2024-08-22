@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback");
+
+@layer components {
+  .btn-primary {
+    @apply bg-current text-center justify-center p-3 px-6 rounded text-white mt-4 flex gap-6 items-center hover:bg-opacity-80;
+  }
+  .btn-dark {
+    @apply bg-black text-center justify-center p-3 px-6 rounded text-white mt-4 flex gap-6 items-center hover:bg-opacity-80;
+  }
+  .btn-outline {
+    @apply bg-white text-center justify-center p-3 px-6 rounded text-black mt-4 flex gap-6 items-center hover:bg-opacity-80 border-2;
+  }
+  .btn-danger {
+    @apply bg-red-800 text-center justify-center p-3 px-6 rounded text-white mt-4 flex gap-6 items-center hover:bg-opacity-80;
+  }
+  .btn-success {
+    @apply bg-green-800 text-center justify-center p-3 px-6 rounded text-white mt-4 flex gap-6 items-center hover:bg-opacity-80;
+  }
+  .inputfield{
+    @apply block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
